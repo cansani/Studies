@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins:wght@100;300;400;500;600;700&family=Work+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background: #ccc;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+
+  transition: background .5s;
+}
+
+.container {
+  width: 400px;
+  height: 450px;
+  background: #ddd;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  border-radius: 1rem;
+
+  transition: background .5s;
+}
+
+.icon {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #eee;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background .5s;
+}
+
+.icon::before {
+  font-size: 7rem;
+  content: '\f186';
+  font-family: fontAwesome;
+  color: #000;
+}
+
+.container button {
+  border: none;
+  padding: 30px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: background .5s;
+}
+
+/* dark theme */
+
+main.dark {
+  background: #202026;
+}
+
+main.dark .icon::before {
+  content: '\f185';
+  color: #fff;
+}
+
+main.dark .container {
+  background: #323840;
+}
+
+main.dark .icon {
+  background: #23232e;
+}
+
+main.dark .container button {
+  background: #23232e;
+}
+
+main.dark .container button h2 {
+  color: #fff;
+}
+
