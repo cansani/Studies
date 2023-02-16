@@ -1,1 +1,1 @@
-pequenos projetos somente para estudos.
+treinando lógica e fazendo pequenos projetos com o intuito de melhorar.
